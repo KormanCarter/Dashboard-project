@@ -1,33 +1,213 @@
-.Wrapper {
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  margin: 0;
-  padding: 20px;
-  width: 250px;
-  font-size: 18px;
-}
-.Wrapper .menu-item {
-  padding: 6px 8px;
-  margin-bottom: 8px;
-  text-decoration: none;
-  color: #000;
-}
-.Wrapper .menu-item:hover {
-  background-color: #ffffff;
-}
-.Wrapper .menu-item a {
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
 }
 
-.nav-title {
-  font-size: 15px;
-  font-weight: bold;
-  color: #919191;
-  margin: 20px 0 10px 0;
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider.slider.round {
+  flex-wrap: wrap-reverse;
+}
+
+.Darkmode {
+  display: flex; /* make it a flex container */
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically (if needed) */
+  margin-right: 30%; /* push it down the page a bit */
+}
+
+.settings {
+  font-size: 3em;
+  text-decoration: underline;
+}
+
+.settings-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.upload-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.upload-box {
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.upload-box input {
+  display: none;
+}
+.upload-box label {
+  display: flex;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+  font-family: bold;
+}
+
+.forms input, .forms select {
+  padding: 12px 16px;
+  font-size: 1.1em;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 300px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.forms label {
+  font-size: 1.1em;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 4px;
+}
+.forms .Email, .forms .Password, .forms .phone-number, .forms .fname, .forms .lname,
+.forms .gender, .forms .birthday, .forms .favorite {
+  margin: 20px 0;
+}
+.forms .gender {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.forms .gender label {
+  margin-bottom: 0;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.Darkmode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  font-size: 1.2em;
+}
+.Darkmode span {
+  margin-right: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.buttons button {
+  font-size: 1.2em;
+  height: 70px;
+  width: auto;
+  color: purple;
+  background-color: red;
+  border: none;
+  animation: colorswitch 2s infinite forwards;
+  transition: background-color 0.1s ease, color 0.1s ease;
+  cursor: pointer;
+}
+
+@keyframes colorswitch {
+  0% {
+    background-color: red;
+    color: purple;
+  }
+  15% {
+    background-color: orange;
+    color: rgb(125, 146, 75);
+  }
+  29% {
+    background-color: rgb(221, 221, 26);
+    color: blue;
+  }
+  43% {
+    background-color: rgb(68, 130, 26);
+    color: rgba(255, 0, 242, 0.712);
+  }
+  57% {
+    background-color: rgb(0, 255, 221);
+    color: rgb(225, 255, 0);
+  }
+  71% {
+    background-color: rgb(17, 0, 255);
+    color: rgb(255, 200, 0);
+  }
+  86% {
+    background-color: rgb(132, 0, 255);
+    color: rgb(255, 0, 0);
+  }
+  100% {
+    background-color: red;
+    color: purple;
+  } /* loops back */
 }/*# sourceMappingURL=style.css.map */
