@@ -1,0 +1,41 @@
+$font-stack: Arial, sans-serif;
+$bg-color: #ffffff;
+$text-color: #000;
+$muted-text: #919191;
+
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  font-family: $font-stack;
+  background-color: $bg-color;
+  margin: 0;
+  padding: 20px;
+  width: 250px;
+  font-size: 18px;
+
+  .menu-item {
+    padding: 6px 8px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+      background-color: $bg-color;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.nav-title {
+  font-size: 15px;
+  font-weight: bold;
+  color: $muted-text;
+  margin: 20px 0 10px 0;
+}
