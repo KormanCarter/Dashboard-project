@@ -204,6 +204,99 @@
         </div>
         </div>
 
+        <div class="boxcontain">
+            <div class="callum" id="callum1">
+                <h1 class="data" id="dataheader1">#</h1>
+                <h1 class="data">1</h1>
+                <h1 class="data">2</h1>
+                <h1 class="data">3</h1>
+                <h1 class="data">4</h1>
+                <h1 class="data">5</h1>
+                <h1 class="data">6</h1>
+                <h1 class="data">7</h1>
+                <h1 class="data">8</h1>
+                <h1 class="data">9</h1>
+                <h1 class="data">10</h1>
+            </div>
+            <div class="callum" id="callum2">
+                <h1 class="data" id="dataheader2">Name</h1>
+                <h1 class="data">Lebron James</h1>
+                <h1 class="data">Jonsey</h1>
+                <h1 class="data">Cal Raleigh</h1>
+                <h1 class="data">Adam Sandler</h1>
+                <h1 class="data">JSN</h1>
+                <h1 class="data">Bugs Bunny</h1>
+                <h1 class="data">John Smith</h1>
+                <h1 class="data">Peter Parker</h1>
+                <h1 class="data">Bronny James</h1>
+                <h1 class="data">Byrce James</h1>
+            </div>
+            <div class="callum" id="callum3">
+                <h1 class="data" id="dataheader3">Company</h1>
+                <h1 class="data">NBA</h1>
+                <h1 class="data">Fortnite</h1>
+                <h1 class="data">MLB</h1>
+                <h1 class="data">TV</h1>
+                <h1 class="data">NFL</h1>
+                <h1 class="data">Looney Tunes</h1>
+                <h1 class="data">Generic Inc.</h1>
+                <h1 class="data">NY Press</h1>
+                <h1 class="data">NBA</h1>
+                <h1 class="data">NCAA</h1>
+            </div>
+            <div class="callum" id="callum4">
+                <h1 class="data" id="dataheader4">Phone</h1>
+                <h1 class="data">(801)-236-2003</h1>
+                <h1 class="data">(801)-534-6990</h1>
+                <h1 class="data">(801)-140-3064</h1>
+                <h1 class="data">(801)-124-5555</h1>
+                <h1 class="data">(801)-0896-223</h1>
+                <h1 class="data">(801)-3i5-6868</h1>
+                <h1 class="data">(801)-123-4567</h1>
+                <h1 class="data">(801)-472-0373</h1>
+                <h1 class="data">(801)-254-6767</h1>
+                <h1 class="data">(801)-111-2222</h1>
+            </div>
+            <div class="callum" id="callum5">
+                <h1 class="data" id="dataheader5">Channel</h1>
+                <h1 class="data">Phone</h1>
+                <h1 class="data">Email</h1>
+                <h1 class="data">Linkedin</h1>
+                <h1 class="data">Phone</h1>
+                <h1 class="data">Phone</h1>
+                <h1 class="data">Email</h1>
+                <h1 class="data">Phone</h1>
+                <h1 class="data">Facebook</h1>
+                <h1 class="data">Phone</h1>
+                <h1 class="data">Skype</h1>
+            </div>
+            <div class="callum" id="callum6">
+                <h1 class="data" id="dataheader6">Assigned To</h1>
+                <h1 class="data">Seth</h1>
+                <h1 class="data">Korman</h1>
+                <h1 class="data">Seth</h1>
+                <h1 class="data">Kaia</h1>
+                <h1 class="data">Seth</h1>
+                <h1 class="data">Kaia</h1>
+                <h1 class="data">Korman</h1>
+                <h1 class="data">Kaia</h1>
+                <h1 class="data">Seth</h1>
+                <h1 class="data">Korman</h1>
+            </div>
+            <div class="callum" id="callum7">
+                <h1 class="data" id="dataheader7">Status</h1>
+                <div class="status1">Contacted</div>
+                <div class="status2">New</div>
+                <div class="status3">Qualified</div>
+                <div class="status4">Lost</div>
+                <div class="status3">Contacted</div>
+                <div class="status1">Contacted</div>
+                <div class="status2">Contacted</div>
+                <div class="status2">Contacted</div>
+                <div class="status1">Contacted</div>
+                <div class="status4">Contacted</div>
+            </div>
+        </div>
     
     </div>
 </div>
@@ -217,18 +310,18 @@
         const ls = document.getElementById('leadstats')
 
       function navhs(){
-    if (navbar.style.display == 'block') {
-        navbar.style.display = 'none';
-        sec1.style.width = "100vw";
-        sec2.style.width = "100vw";
-        cl.style.width = "100vw";
-        ls.style.width = "100vw";
-    } else {
-        navbar.style.display = 'block'; 
+    if (navbar.style.display == 'none') {
+        navbar.style.display = 'block';
         sec1.style.width = "calc(100vw - 250px)";
         sec2.style.width = "calc(100vw - 250px)";
         cl.style.width = "calc(100vw - 250px)";
         ls.style.width = "calc(100vw - 250px)";
+    } else {
+        navbar.style.display = 'none'; 
+        sec1.style.width = "100vw";
+        sec2.style.width = "100vw";
+        cl.style.width = "100vw";
+        ls.style.width = "100vw";
     }
 }
 
