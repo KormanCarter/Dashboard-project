@@ -24,7 +24,10 @@
   align-items: center;
   gap: 10px;
 }
-
+.Logo{
+  width: auto;
+  height: 100px;
+}
 .nav-title {
   font-size: 15px;
   font-weight: bold;

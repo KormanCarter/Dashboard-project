@@ -1,0 +1,140 @@
+$secborder: 1px solid #c9c9c9;
+$font: "Roboto Condensed", sans-serif;
+$fontweight: 400;
+
+#cls{
+    width: 19vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#clc{
+    justify-content: space-between;
+}
+#cltable{
+    border: $secborder;
+    border-radius: 10px;
+    width: 99w;
+    height: 250px;
+    display: flex;
+    margin: 5px;
+}
+th{
+    padding: 0vw 4.3vw 0vw 4.3vw;
+    font-family: $font;
+    font-weight: $fontweight;
+    color: #757575;
+}
+.cltr{
+    height: 50px;
+    display: flex;
+    margin: 5px;
+    margin-left: -1px;
+}
+.tabledata{
+    padding: 0vw 4.3vw 0vw 4.3vw;
+    font-family: $font;
+    font-weight: $fontweight;
+    margin-top: 15px;
+    font-size: 12px;
+}
+#tabledata11{
+    padding: 0vw 4.3vw 0vw 5vw;
+}
+#tabledata12{
+    padding: 0vw 4.3vw 0vw 2vw;
+}
+#tabledata13{
+    padding: 0vw 4.3vw 0vw 6.8vw;
+}
+#tabledata14{
+    padding: 0vw 4.3vw 0vw 2.5vw;
+}
+#tabledata15{
+    padding: 0vw 4.3vw 0vw 5.5vw;
+}
+#tabledata16{
+    padding: 0vw 4.3vw 0vw 8.4vw;
+}
+#tabledata17{
+    padding: 0vw 4.3vw 0vw 4vw;
+}
+.status1{
+    border: blue solid 1px;
+    background-color: rgb(95, 142, 243);
+    font-family: $font;
+    font-weight: $fontweight;
+    width: 60px;
+    height: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+.status2{
+    border: rgb(0, 0, 0) solid 1px;
+    background-color: rgb(173, 173, 173);
+    font-family: $font;
+    font-weight: $fontweight;
+    width: 60px;
+    height: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+.status3{
+    border: rgb(0, 143, 10) solid 1px;
+    background-color: rgb(119, 236, 84);
+    font-family: $font;
+    font-weight: $fontweight;
+    width: 60px;
+    height: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+.status4{
+    border: rgb(138, 1, 1) solid 1px;
+    background-color: rgb(239, 70, 70);
+    font-family: $font;
+    font-weight: $fontweight;
+    width: 60px;
+    height: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media(max-width: 1075px){
+    th{
+        padding: 0vw 3vw 0vw 3vw;
+    }
+    #tabledata11{
+        padding: 0vw 4.3vw 0vw 1.5vw;
+    }
+    #tabledata12{
+        padding: 0vw 4.3vw 0vw 0vw;
+    }
+    #tabledata13{
+        padding: 0vw 4.3vw 0vw 3.5vw;
+    }
+    #tabledata14{
+        padding: 0vw 4vw 0vw 0.1vw;
+    }
+    #tabledata15{
+        padding: 0vw 4.3vw 0vw 3vw;
+    }
+    #tabledata16{
+        padding: 0vw 4.3vw 0vw 7.3vw;
+    }
+    #tabledata17{
+        padding: 0vw 4.3vw 0vw 1vw;
+    }
+
+
+}
+@media (max-width: 975px){
+    #tabledata16{
+    padding: 0vw 0vw 0vw 8vw;
+}
+#tabledata17{
+    padding: 0vw 4.3vw 0vw 8vw;
+}
+}
