@@ -7,10 +7,13 @@
     <title>Settings</title>
 </head>
 <body>
+    <iframe src="nav.html" id="navbar">test</iframe>
     <div class="settings-container">
         <header class="settings">SETTINGS</header>
     </div>
-    
+    <div class="fr0">
+        <button>></button>
+    </div>
     <div class="upload-box-container">
         <div class="upload-box">
             <input type="file" id="fileInput" accept="image/*">
@@ -85,5 +88,16 @@
         <button>Save</button>
         <button>Reset</button>
     </div>
+<script>
+        const button = document.getElementById('fr0')
+        const navbar = document.getElementById('navbar')
+      function navhs(){
+    if (navbar.style.display == 'block') {
+        navbar.style.display = 'none';
+    } else {
+        navbar.style.display = 'block';
+    }
+}
+</script>
 </body>
 </html>
