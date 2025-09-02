@@ -3,101 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Settings</title>
-</head>
+    <title>Document</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+     <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    rel="stylesheet"
+  />
+
+
 <body>
-    <iframe src="nav.html" id="navbar">test</iframe>
-    <div class="settings-container">
-        <header class="settings">SETTINGS</header>
-    </div>
-    <div class="fr0">
-        <button>></button>
-    </div>
-    <div class="upload-box-container">
-        <div class="upload-box">
-            <input type="file" id="fileInput" accept="image/*">
-            <label for="fileInput">Profile Picture</label>
-            <div class="preview" id="preview"></div>
+<div class="boxcontain">
+<iframe src="nav.html" id="navbar"></iframe>
+<div id="mainpage">
+    <div id="sec1">
+        <div id="compromise1">
+            <button onclick="navhs()" class="fr0"><</button>
+            <p1 class="titlei">Leads</p1>
+        </div>
+        <div id="compromise2">
+            <button class="fr"><span class="material-symbols-outlined">
+            feature_search
+            </span></button>
+            <div class="fr" id="fr2">
+                <span class="material-symbols-outlined">
+                search
+                </span>
+                <p1 class="title">Search</p1><br>
+            </div>
+            <button class="fr" id="fr3">
+                <span class="material-symbols-outlined">
+                share
+                </span>
+                <p1 class="title">Share</p1><br>
+            </button>
         </div>
     </div>
-    
-    <div class="actions">
-        <form action="#" class="forms">
-            <div class="Email">
-                <label for="Email">Email:</label>
-                <input type="text" placeholder="example@gmail.com">
-            </div>
-            <div class="Password">
-                <label for="Password">Password:</label>
-                <input type="text">
-            </div>
-            <div class="phone-number">
-                <label for="phone-number">Phone Number:</label>
-                <input type="text" placeholder="801-999-9999" pattern="^\d{3}[-\s]?\d{3}[-\s]?\d{4}$">
-            </div>
-            <div class="fname">
-                <label for="fname">First name:</label>
-                <input type="text" placeholder="Mario">
-            </div>
-            <div class="lname">
-                <label for="lname">Last name:</label>
-                <input type="text" placeholder="Luigi">
-            </div>
-            <div class="gender">
-                <label for="title" class="gender-title">Gender:</label>
-                <label>Male:</label>
-                <input type="radio" name="title" value="Male" id="option">
-                <label>Female:</label>
-                <input type="radio" name="title" value="Female" id="option">
-                <label>Other:</label>
-                <input type="radio" name="title" value="Other" id="option">
-            </div>
-            <div class="birthday">
-                <label for="birthday">Date Of Birth:</label>
-                <input type="date" placeholder="08-01-2007">
-            </div>
-            <div class="favorite">
-                <label for="favorite">Favorite Instructor:</label>
-                <select name="favorite" id="favorite">
-                    <option value="Trent Ross">Trent Ross</option>
-                    <option value="Chase Spencer">Chase Spencer</option>
-                    <option value="Paul Raffensparger">Paul Raffensparger</option>
-                    <option value="Curtis Dalton">Curtis Dalton</option>
-                    <option value="Trevor Michaelis">Trevor Michaelis</option>
-                    <option value="Thomas Chan">Thomas Chan</option>
-                    <option value="Clint Pedersen">Clint Pedersen</option>
-                    <option value="Aaron Becar">Aaron Becar</option>
-                    <option value="Alberto Garza">Alberto Garza</option>
-                    <option value="Adrien Donat">Adrien Donat</option>
-                    <option value="Megan Muirhead">Megan Muirhead</option>
-                    <option value="None">None</option>
-                </select>
-            </div>
-        </form>
+
+    <div id="sec2">
+        <div id="compromise1">
+            <button class="fr-0" id="exfr">
+                <span class="material-symbols-outlined">
+                folder_copy
+                </span>
+                <p1 class="title">Create Task</p1><br>
+            </button>
+            <button class="fr-0">
+                <span class="material-symbols-outlined">
+                add
+                </span>        
+                <p1 class="title">Add Project</p1><br> 
+            </button>
+        </div>
+        <div id="compromise2">
+            <button class="fr-0">
+                <p1 class="title">All Projects</p1><br> 
+                <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+            </button>
+            <button class="fr-0">
+                <p1 class="title">All Teams</p1><br> 
+                <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+            </button>
+            <button class="fr-0">
+                <span class="material-symbols-outlined">
+                calendar_month
+                </span>
+                <p1 class="title">This Month</p1><br> 
+                <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+            </button>
+        </div>
     </div>
 
-    <div class="Darkmode">
-        <span>Dark Mode</span>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
+    <div class="boxcontain" id="leadstats">
+        <div class="innerbox0">
+            <div class="innerbox1">
+                <span class="material-symbols-outlined">
+                group
+                </span>
+            </div>
+            <p1 class="title">Total Leads</p1><br>
+            <div class="innerbox2">
+                <h1 class="statat">82</h1>
+                <p1 class="sec3cap1">Leads</p1>
+                <div class="statgraphic1">
+                    <span class="material-symbols-outlined">
+                    arrow_upward_alt
+                    </span>7.9%
+                </div>
+            </div>
+        </div>
+        <div class="innerbox0">
+            <div class="innerbox1">
+                <span class="material-symbols-outlined">
+                person_add
+                </span>
+            </div>
+            <p1 class="title">New Leads</p1><br>
+            <div class="innerbox2">
+                <h1 class="statat">18</h1>
+                <p1 class="sec3cap1">Leads</p1>
+                <div class="statgraphic1">
+                    <span class="material-symbols-outlined">
+                    arrow_upward_alt
+                    </span>12.6%
+                </div>
+            </div>
+        </div>
+        <div class="innerbox0">
+            <div class="innerbox1">
+               <span class="material-symbols-outlined">
+                fact_check
+                </span>
+            </div>
+            <p1 class="title">Qualified Leads</p1><br>
+            <div class="innerbox2">
+                <h1 class="statat">27</h1>
+                <p1 class="sec3cap1">Leads</p1>
+                <div class="statgraphic1">
+                    <span class="material-symbols-outlined">
+                    arrow_upward_alt
+                    </span>12%
+                </div>
+            </div>
+        </div>
+        <div class="innerbox0">
+            <div class="innerbox1">
+                <span class="material-symbols-outlined">
+                person_cancel
+                </span>
+            </div>
+            <p1 class="title">Lost Leads</p1><br>
+            <div class="innerbox2">
+                <h1 class="statat">9</h1>
+                <p1 class="sec3cap1">Leads</p1>
+                <div class="statgraphic1">
+                    <span class="material-symbols-outlined">
+                    arrow_downward
+                    </span>8.6%
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="buttons">
-        <button>Save</button>
-        <button>Reset</button>
+    <div id="contactlist">
+        <div class="boxcontain" id="clc">
+        <div id="compromise1">
+            <div class="fr" id="cls">
+                <span class="material-symbols-outlined">
+                search
+                </span>
+                <p1 class="title">Search</p1><br>
+            </div>
+            <button class="fr-0">
+                <span class="material-symbols-outlined">
+                swap_vert
+                </span>        
+                <p1 class="title">Sort</p1><br> 
+                <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+                <button class="fr-0">
+                <span class="material-symbols-outlined">
+                filter_alt
+                </span>
+                <p1 class="title">Filter</p1><br> 
+                <span class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span>
+            </button>
+            </button>
+        </div>
+        <div id="compromise2">
+            <button class="fr-0">
+                <span class="material-symbols-outlined">
+                person_add
+                </span>
+                <p1 class="title">Add Person</p1><br> 
+            </button>
+            <button class="fr-0">
+                <span class="material-symbols-outlined">
+                csv
+                </span>
+                <p1 class="title">Export CSV</p1><br> 
+            </button>
+        </div>
+        </div>
+
+    
     </div>
+</div>
+</div>
 <script>
         const button = document.getElementById('fr0')
         const navbar = document.getElementById('navbar')
+        const sec1 = document.getElementById('sec1')
+        const sec2 = document.getElementById('sec2')
+        const cl = document.getElementById('contactlist')
+        const ls = document.getElementById('leadstats')
+
       function navhs(){
     if (navbar.style.display == 'block') {
         navbar.style.display = 'none';
+        sec1.style.width = "100vw";
+        sec2.style.width = "100vw";
+        cl.style.width = "100vw";
+        ls.style.width = "100vw";
     } else {
-        navbar.style.display = 'block';
+        navbar.style.display = 'block'; 
+        sec1.style.width = "calc(100vw - 250px)";
+        sec2.style.width = "calc(100vw - 250px)";
+        cl.style.width = "calc(100vw - 250px)";
+        ls.style.width = "calc(100vw - 250px)";
     }
 }
-</script>
+
+
+    </script>
 </body>
 </html>
