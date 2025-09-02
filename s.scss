@@ -2,6 +2,21 @@
 
 
 
+.settings-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; // Center the title
+  gap: 10px;
+}
+
+#back {
+  position: absolute;
+  margin-right: 100%;
+  padding-right: 180%;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .settings {
   font-size: 3em;
@@ -14,11 +29,6 @@
 #seth{
   flex-direction: column;
   margin-left: 25%;
-}
-.settings-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
 }
 
 .actions {

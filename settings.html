@@ -10,12 +10,12 @@
     <div class="containsettings">
     <iframe src="nav.html" id="navbar">test</iframe>
     <div id="seth">
-    <div class="settings-container">
-        <header class="settings">SETTINGS</header>
+<div class="settings-container">
+    <div id="back">
+        <button>&lt;</button>
     </div>
-    <div class="fr0">
-        <button>></button>
-    </div>
+    <header class="settings">SETTINGS</header>
+</div>
     <div class="upload-box-container">
         <div class="upload-box">
             <input type="file" id="fileInput" accept="image/*">
@@ -93,15 +93,17 @@
     </div>
 </div>
 <script>
-        const button = document.getElementById('fr0')
-        const navbar = document.getElementById('navbar')
-      function navhs(){
-    if (navbar.style.display == 'block') {
-        navbar.style.display = 'none';
-    } else {
-        navbar.style.display = 'block';
-    }
-}
+    const backBtn = document.getElementById('back'); // <-- use your real button
+    const navbar = document.getElementById('navbar');
+
+    backBtn.addEventListener("click", () => {
+        if (navbar.style.display === 'block') {
+            navbar.style.display = 'none';
+        } else {
+            navbar.style.display = 'block';
+        }
+    });
 </script>
+
 </body>
 </html>
