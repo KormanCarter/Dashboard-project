@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -48,9 +48,9 @@
         </div>
 
         <div class="menu-item">
-          <a href="index.html">
+          <a href="#">
             <span class="material-symbols-outlined">group</span>
-            <span>Leads</span>
+            <span onclick="openleads()">Leads</span>
           </a>
         </div>
 
@@ -94,8 +94,8 @@
         </div>
         <div class="bottom">
         <div class="menu-item">
-          <a href="settings.html">
-            <span class="material-icons-outlined">settings</span>
+          <a href="#">
+            <span class="material-icons-outlined" onclick="opensettings()">settings</span>
             Settings
           </a>
         </div>
@@ -109,5 +109,15 @@
         </div>
       </div>
     </nav>
+    <script>
+      
+      function opensettings(){
+        window.location.href = 'settings.html'
+      }
+      function openleads(){
+        window.location.href = 'index.html'
+      }
+
+    </script>
   </body>
 </html>
