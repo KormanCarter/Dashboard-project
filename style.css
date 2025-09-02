@@ -24,13 +24,15 @@
   align-items: center;
   gap: 10px;
 }
-.Logo{
-  width: auto;
-  height: 100px;
-}
+
 .nav-title {
   font-size: 15px;
   font-weight: bold;
   color: #919191;
   margin: 20px 0 10px 0;
+}
+
+.Logo {
+  width: 150px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

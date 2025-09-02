@@ -48,9 +48,9 @@
         </div>
 
         <div class="menu-item">
-          <a href="#">
+          <a onclick="openleads()">
             <span class="material-symbols-outlined">group</span>
-            <span onclick="openleads()">Leads</span>
+            <span >Leads</span>
           </a>
         </div>
 
@@ -94,8 +94,8 @@
         </div>
         <div class="bottom">
         <div class="menu-item">
-          <a href="#">
-            <span class="material-icons-outlined" onclick="opensettings()">settings</span>
+          <a onclick="opensettings()">
+            <span class="material-icons-outlined" >settings</span>
             Settings
           </a>
         </div>
@@ -112,10 +112,10 @@
     <script>
       
       function opensettings(){
-        window.location.href = 'settings.html'
+        window.top.location.href = "settings.html";
       }
       function openleads(){
-        window.location.href = 'index.html'
+        window.top.location.href = "index.html";
       }
 
     </script>

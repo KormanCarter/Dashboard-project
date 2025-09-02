@@ -72,6 +72,16 @@ input:checked + .slider:before {
   text-decoration: underline;
 }
 
+.containsettings {
+  display: flex;
+  flex-direction: row;
+}
+
+#seth {
+  flex-direction: column;
+  margin-left: 25%;
+}
+
 .settings-container {
   display: flex;
   justify-content: center;
@@ -210,4 +220,4 @@ input:checked + .slider:before {
     background-color: red;
     color: purple;
   } /* loops back */
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=s.css.map */
