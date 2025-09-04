@@ -77,18 +77,21 @@ input:checked + .slider:before {
 
 #back {
   position: absolute;
-  margin-right: 100%;
-  padding-right: 180%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  left: 0;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .settings {
   font-size: 3em;
   text-decoration: underline;
+  margin-right: 40px;
+  margin-left: -50px;
 }
 
 .containsettings {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
@@ -109,6 +112,7 @@ input:checked + .slider:before {
   justify-content: center;
   align-items: center;
   margin: 20px 0;
+  margin-left: -100px;
 }
 
 .upload-box {
