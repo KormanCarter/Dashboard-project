@@ -1,0 +1,212 @@
+@import 'contactlist';
+
+$secborder: 1px solid #c9c9c9;
+$font: "Roboto Condensed", sans-serif;
+$fontweight: 400;
+
+
+#sec2{
+    display: flex;
+    border-bottom: $secborder;
+    width: calc(100vw - 250px);
+    height: fit-content;
+    margin-left: 0px;
+    justify-content: space-between;
+}
+#sec1{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $secborder;
+    width: calc(100vw - 250px);
+    height: fit-content;
+    margin-left: -1px;
+}
+.boxcontain{
+    display: flex;
+    flex-direction: row;
+}
+.innerbox0{
+    flex-wrap: wrap;
+    display: flex;
+    border-radius: 5px;
+    border: $secborder;
+    width: 25%;
+    height: fit-content;
+    margin: 5px;
+    min-width: 189px;
+}
+.innerbox1{
+    width: 30px;
+    height: 30px;
+    border: $secborder;
+    border-radius: 5px;
+    margin: 5px;
+}
+.title{
+    margin-top: 10px;
+    justify-content: center;
+    font-family: "Vend Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    align-items: center;
+    
+    
+}
+.innerbox2{
+    width: 100%;
+    margin: 5px;
+    height: fit-content;
+    border: $secborder;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.fr0{
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: $secborder;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+    font-weight: $fontweight;
+    margin: 20px;
+}
+.titlei{
+    display: flex;
+    align-items: center;
+    font-family: $font;
+    font-weight: $fontweight;
+    font-size: 30px;
+    margin-left: -10px;
+}
+.fr{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 0px;
+    width: 30px;
+    height: 30px;
+    border: $secborder;
+    border-radius: 5px;
+    align-items: center;
+    font-family: $font;
+    font-weight: $fontweight;
+    margin: 20px;
+    margin-left: -18px;
+    background-color: white;
+}
+#fr2{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#compromise1{
+    display: flex;
+    justify-content: flex-start;
+}
+#compromise2{
+    display: flex;
+    justify-content: flex-end;
+}
+span{
+    position: left;
+}
+#fr3{
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.fr4{
+    display: flex;
+    width: 20vw;
+    height: 30px;
+    border: $secborder;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+    font-weight: $fontweight;
+    margin: 20px;
+}
+#leadstats{
+    width: calc(100vw - 260px);
+}
+.fr-0{
+    display: flex;
+    width: 10vw;
+    height: 30px;
+    border: $secborder;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: $font;
+    font-weight: $fontweight;
+    margin: 20px;
+    margin-left: -18px;
+    background-color: white;
+}
+#exfr{
+    margin-left: 18px;
+}
+.statat{
+    font-family: $font;
+    font-weight: $fontweight;
+    font-size: 50px;
+}
+.sec3cap1{
+    margin-top: 65px;
+}
+.statgraphic1{
+    width: 70px;
+    border-radius: 20px;
+    border: solid green 1px;
+    height: 25px;
+    background-color: #78e760;
+    margin-top: 55px;
+    margin-left: 23vh;
+    display: flex;
+    margin-left: auto;
+}
+#navbar{
+    display: flex;
+    width: 250px;
+    height: 100vh;
+    border: black solid 1px
+}
+
+
+@media (max-width: 1280px){
+    .fr-0{
+        width: 128px;
+    }
+}
+@media (max-width: 685px){
+    #sec2{
+        flex-wrap: wrap;
+    }
+    #compromise2{
+        margin-left: 36px;
+    }
+}
+@media (max-width: 1005px){
+    #fr3{
+        width: 70px;
+    }
+}
+@media (max-width: 812px){
+    #leadstats{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 685px){
+    #navbar{
+        display: none;
+    }
+    #sec1, #sec2, #contactlist, #leadstats{
+        width: 100vw;
+    }
+}

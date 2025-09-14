@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Settings</title>
+</head>
+<body>
+    <div class="containsettings">
+    <iframe src="nav.html" id="navbar">test</iframe>
+    <div id="seth">
+<div class="settings-container">
+    <header class="settings">SETTINGS</header>
+</div>
+    <div class="upload-box-container">
+        <div class="upload-box">
+            <input type="file" id="fileInput" accept="image/*">
+            <label for="fileInput">Profile Picture</label>
+            <div class="preview" id="preview"></div>
+        </div>
+    </div>
+    <div id="back">
+        <button>&lt;</button>
+    </div>
+    <div class="actions">
+        <form action="#" class="forms">
+            <div class="Email">
+                <label for="Email">Email:</label>
+                <input type="text" placeholder="example@gmail.com">
+            </div>
+            <div class="Password">
+                <label for="Password">Password:</label>
+                <input type="text">
+            </div>
+            <div class="phone-number">
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" placeholder="801-999-9999" pattern="^\d{3}[-\s]?\d{3}[-\s]?\d{4}$">
+            </div>
+            <div class="fname">
+                <label for="fname">First name:</label>
+                <input type="text" placeholder="Mario">
+            </div>
+            <div class="lname">
+                <label for="lname">Last name:</label>
+                <input type="text" placeholder="Luigi">
+            </div>
+            <div class="gender">
+                <label for="title" class="gender-title">Gender:</label>
+                <label>Male:</label>
+                <input type="radio" name="title" value="Male" id="option">
+                <label>Female:</label>
+                <input type="radio" name="title" value="Female" id="option">
+                <label>Other:</label>
+                <input type="radio" name="title" value="Other" id="option">
+            </div>
+            <div class="birthday">
+                <label for="birthday">Date Of Birth:</label>
+                <input type="date" placeholder="08-01-2007">
+            </div>
+            <div class="favorite">
+                <label for="favorite">Favorite Instructor:</label>
+                <select name="favorite" id="favorite">
+                    <option value="Trent Ross">Trent Ross</option>
+                    <option value="Chase Spencer">Chase Spencer</option>
+                    <option value="Paul Raffensparger">Paul Raffensparger</option>
+                    <option value="Curtis Dalton">Curtis Dalton</option>
+                    <option value="Trevor Michaelis">Trevor Michaelis</option>
+                    <option value="Thomas Chan">Thomas Chan</option>
+                    <option value="Clint Pedersen">Clint Pedersen</option>
+                    <option value="Aaron Becar">Aaron Becar</option>
+                    <option value="Alberto Garza">Alberto Garza</option>
+                    <option value="Adrien Donat">Adrien Donat</option>
+                    <option value="Megan Muirhead">Megan Muirhead</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <div class="Darkmode">
+        <span>Dark Mode</span>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="buttons">
+        <button>Save</button>
+        <button>Reset</button>
+    </div>
+    </div>
+</div>
+<script>
+    const backBtn = document.getElementById('back'); // <-- use your real button
+    const navbar = document.getElementById('navbar');
+
+    backBtn.addEventListener("click", () => {
+        if (navbar.style.display === 'none') {
+            navbar.style.display = 'block';
+        } else {
+            navbar.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
